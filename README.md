@@ -36,9 +36,9 @@ pnpm install
 3. Set up environment variables by creating a `.env` file:
 
 ```
-DATABASE_URL=postgres://postgres.judbqaotzbgkvqsvbuwd:sNMb8yd9whqi0HKR@aws-0-us-east-1.pooler.supabase.com:6543/postgres?pgbouncer=true&connection_limit=2
-DIRECT_URL=postgres://postgres.judbqaotzbgkvqsvbuwd:WfOpmdlxKOL4o9lU@aws-0-us-east-1.pooler.supabase.com:5432/postgres
-NPM_TOKEN=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
+DATABASE_URL=your_database_url
+DIRECT_URL=your_direct_url
+NPM_TOKEN=your_npm_token
 ```
 
 4. Generate Prisma client:
