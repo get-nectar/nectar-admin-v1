@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+  binaryTargets = []
+}
+
+plugin hooks {
+  provider = '@zenstackhq/tanstack-query'
+  output = "./hooks"
+  target = "react"
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
+  extensions = [vector, uuid_ossp(map: "uuid-ossp", schema: "extensions")]
+}
