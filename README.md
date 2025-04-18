@@ -1,6 +1,13 @@
-# Nectar Admin Tool
+# Nectar Admin v1
 
-A lightweight admin tool for managing users in workspaces.
+This is the admin dashboard for the Nectar platform. It provides a user interface for managing the platform's resources and configurations.
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Copy `.env.example` to `.env` and configure your environment variables
+4. Run the development server with `npm run dev`
 
 ## Getting Started
 
