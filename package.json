@@ -9,14 +9,14 @@
     "lint": "next lint",
     "postinstall": "node scripts/copySchema.js && npm run db:generate",
     "db:generate": "zenstack generate --schema ./db/schema.zmodel && node scripts/noTsHooks.js",
-    "db:update": "npm install @getnectar/schema@latest && npm run postinstall",
-    "db:update-staging": "npm install @getnectar/schema@staging && npm run postinstall"
+    "db:update": "npm install @nectarsocial/schema@6.1.15 && npm run postinstall",
+    "db:update-staging": "npm install @nectarsocial/schema@staging && npm run postinstall"
   },
   "dependencies": {
-    "@getnectar/schema": "5.25.15",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@heroui/react": "^2.7.6",
+    "@nectarsocial/schema": "^6.1.15",
     "@prisma/client": "^5.20.0",
     "@zenstackhq/runtime": "^2.7.3",
     "@zenstackhq/server": "^2.7.3",

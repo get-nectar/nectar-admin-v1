@@ -5,7 +5,7 @@ const sourceDir = path.join(
   __dirname,
   '..',
   'node_modules',
-  '@getnectar',
+  '@nectarsocial',
   'schema',
 )
 const targetDir = path.join(__dirname, '..', 'db')

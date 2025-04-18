@@ -22,7 +22,7 @@ This is the admin dashboard for the Nectar platform. It provides a user interfac
 - TypeScript
 - Tailwind CSS
 - Prisma ORM
-- @getnectar/schema
+- @nectarsocial/schema
 - Headless UI components
 
 ## API Routes

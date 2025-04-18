@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
-    serverComponentsExternalPackages: ['@prisma/client', '@getnectar/schema'],
+    serverComponentsExternalPackages: ['@prisma/client', '@nectarsocial/schema'],
   },
 }
 
