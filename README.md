@@ -9,11 +9,25 @@ This is the admin dashboard for the Nectar platform. It provides a user interfac
 3. Copy `.env.example` to `.env` and configure your environment variables
 4. Run the development server with `npm run dev`
 
-## Getting Started
+## Features
 
-1. Clone the repository
-2. Install dependencies
-3. Set up environment variables
-4. Run the development server
+- User management
+- Resource monitoring
+- Configuration settings
+- Analytics dashboard
 
-More details to come soon! 
+## Tech Stack
+
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- Prisma ORM
+- @getnectar/schema
+- Headless UI components
+
+## API Routes
+
+- `GET /api/users` - Fetch all users
+- `GET /api/workspaces`
+
+More details to come soon!
