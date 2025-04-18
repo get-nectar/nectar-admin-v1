@@ -39,10 +39,16 @@ function copyDirectory(source, target) {
 }
 
 try {
-  copyDirectory(sourceDir, targetDir)
-  console.log(
-    'Schema copied successfully to db folder (excluding package.json)',
-  )
+  // Check if source directory exists
+  if (fs.existsSync(sourceDir)) {
+    copyDirectory(sourceDir, targetDir)
+    console.log(
+      'Schema copied successfully to db folder (excluding package.json)',
+    )
+  } else {
+    console.log('Schema package not found. Using existing schema files.')
+  }
 } catch (error) {
   console.error('Error copying schema:', error)
+  process.exit(0) // Exit gracefully to continue the build
 } 
