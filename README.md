@@ -1,12 +1,20 @@
-# Nectar Admin Tool
+# Nectar Admin v1
 
-A lightweight admin tool for managing users in workspaces.
+This is the admin dashboard for the Nectar platform. It provides a user interface for managing the platform's resources and configurations.
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Copy `.env.example` to `.env` and configure your environment variables
+4. Run the development server with `npm run dev`
 
 ## Features
 
-- Add users to workspaces with specific roles
-- User-friendly interface with confirmation dialogs
-- Status notifications for success/failure
+- User management
+- Resource monitoring
+- Configuration settings
+- Analytics dashboard
 
 ## Tech Stack
 
@@ -17,48 +25,7 @@ A lightweight admin tool for managing users in workspaces.
 - @getnectar/schema
 - Headless UI components
 
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- pnpm
-
-### Setup
-
-1. Clone the repository
-2. Install dependencies
-
-```bash
-pnpm install
-```
-
-3. Set up environment variables by creating a `.env` file:
-
-```
-DATABASE_URL=your_database_url
-DIRECT_URL=your_direct_url
-NPM_TOKEN=your_npm_token
-```
-
-4. Generate Prisma client:
-
-```bash
-pnpm run db:generate
-```
-
-5. Run the development server:
-
-```bash
-pnpm dev
-```
-
 ## API Routes
 
 - `GET /api/users` - Fetch all users
-- `GET /api/workspaces` - Fetch all workspaces
-- `POST /api/add-user-to-workspace` - Add a user to a workspace
-
-## Deployment
-
-This project is set up to be deployed on Vercel. 
+- `GET /api/workspaces`
