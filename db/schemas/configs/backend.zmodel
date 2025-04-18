@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions","tracing"]
+  binaryTargets = ["darwin-arm64", "rhel-openssl-3.0.x", "debian-openssl-1.1.x", "debian-openssl-3.0.x", "darwin"]
+}
+
+generator kysely {
+  provider = "prisma-kysely"
+
+  // Optionally provide a destination directory for the generated file
+  // and a filename of your choice
+  output = "../kysely"
+  fileName = "index.ts"
+  // Optionally generate runtime enums to a separate file
+  //  enumFileName = "enums.ts"
+}
+
+datasource db {
+  provider   = "postgresql"
+  url        = env("DATABASE_URL")
+  directUrl  = env("DIRECT_URL")
+  extensions = [vector, uuid_ossp(map: "uuid-ossp", schema: "extensions")]
+}
